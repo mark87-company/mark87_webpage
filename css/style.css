@@ -1,0 +1,144 @@
+body{background: #000000;overflow-x: hidden;}
+*{font-size:16px;}
+.aboutBG{position: absolute;background-image: url(../images/bg2.jpg);width:100%;height:100vw;background-repeat: no-repeat;background-position:top center;background-size: 100% auto;z-index:-2;left:0px;}
+.aboutBGZZ{position: absolute;width:100%;height:100vw;z-index:-1;background: rgba(0,0,0,0.8);left:0px;}
+.content{margin: auto;}
+.header{display: flex;align-items: center;width: 100%;position: fixed;top:0px;background-color:rgba(0,0,0,0.8);}
+.header img{height:80px;margin-right:50px;}
+.header a{color:#ffffff;font-weight: bold;margin:0px 20px;}
+.header a:hover{color:#1DF200;}
+.banner{margin-top:80px;display: flex;background-image: url(../images/bg1.png);background-repeat: no-repeat;justify-content: center;flex-direction: column;align-items: center;color:#D0D0D0;}
+.title{display: flex;}
+.title i{color:#1DF200;font-weight: bold;flex-shrink: 0;}
+.title hr{background: #1DF200;border-width: 0px;width:100%;}
+.con{display: flex;align-items: center;flex-direction: column;justify-content: center;text-align: center;}
+.con h5{color:#ffffff;width:100%;line-height: 1.8;}
+.con p{color:#EDEDED;margin-top:20px;}
+.service .con{display: flex;flex-direction: row;justify-content: space-between;}
+.service .con h5{background: rgba(196, 196, 196, 0.1);box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);width:30%;display: flex;align-items: center;justify-content: center;}
+.project .con{flex-direction:column;justify-content: space-around;}
+.project .con .item{width: 100%;display: flex;align-items: center;}
+.project .con .item h5{width:100%;}
+.column{flex-direction: column;align-items: center;}
+.column p{color:#EDEDED;}
+.column hr{width:700px;}
+.bottom{margin:30px 0;border-top:1px solid #1DF200;border-bottom:1px solid #1DF200;display: flex;padding:10px 20px 10px 0;align-items: center;}
+.bottom img{height:60px;flex-shrink: 0;}
+.bottom .middle{width: 100%;color:#ffffff;}
+.bottom .middle p{margin:0px;font-size:13px;}
+.bottom .right{flex-shrink: 0;display: flex;flex-direction: column;align-items: flex-end;color:#ffffff;}
+.bottom .right img{height:20px;width: 20px;margin-bottom:10px;}
+.bottom .right span{font-size:13px;margin:0px;}
+@media (max-width: 800px) {
+	.headerMobile{display: block;}
+	.hrDiv{display: flex;flex-direction: column;align-items: center;background:rgba(0,0,0,0.8);width: 100%;position: fixed;top:0px;height:46px;justify-content: center;z-index:100000;}
+	.hrDiv hr{background: #C4C4C4;width:10vw;height:1px;margin:3px 0;}
+	.mobileMenu{position: fixed;width:100vw;height:100vh;background-color: #ffffff;top:0px;left:0px;padding:30px;text-align: center;display: none;z-index:100001;}
+	.mobileMenu .close{margin:20px 0 30px 0;}
+	.mobileMenu .menu{padding:30px 0;display: flex;flex-direction: column;text-align: left;}
+	.mobileMenu .menu a{font-size:20px;font-weight: bold;color:#000000;margin:0px 0px 30px 0px;padding:0;}
+	.mobileMenu .bq{text-align: left;color:#888888;}
+	.mobileMenu .bq p{margin:0px 0px 10px 0px;padding:0px;font-size:14px;}
+	.mobileMenu .bq .logo{height:6vw;margin-bottom:16px;}
+	.mobileMenu .bq div{display: flex;align-items: center;font-size: 14px;}
+	.mobileMenu .bq div img{width:24px;height:24px;margin-right:10px;}
+	.header{display: none;}
+	.aboutBG{top:100vh;height:160vh !important;background-size: auto 160vh !important;}
+	.aboutBGZZ{top:100vh;height:160vh !important;}
+	h5{font-size:16px;letter-spacing:-1px;}
+	.title{flex-direction: column;align-items: center;}
+	.bottom{flex-direction: column;align-items: flex-start;}
+	.bottom .middle{padding:0 20px 10px 20px;}
+	.bottom .right{padding:0 20px 20px 20px;}
+	.bottom .right img{display: none;}
+	.about .con{padding:60px 0;}
+	.about .con h5{margin-bottom:30px;}
+	.about .con p{color:#EDEDED;font-size:14px;line-height: 2;}
+	.banner{height:100vh;background-position:center right -10vw;background-size: 80vw auto;margin-top:0;}
+	.banner img{width:60vw;margin-left:4vw;}
+	.banner div{margin-top:-20px;}
+	.banner div h5{margin-top: 20px;}
+	.title i{font-size: 30px;margin:0 20px;}
+	.title hr{height:4px;margin:10px;}
+	.title hr:nth-child(1){display: none;}
+	.contact{margin-top:30px;}
+	.contact p{margin-bottom: 0;}
+	.contact .con h5{line-height: 1;margin-bottom: 0;padding-top:18px;}
+	.pc{display: none !important;}
+	.swiper-container {width: 100%;height: 90vw;}
+	.swiper-button-next, .swiper-button-prev{width: 20px !important;height: 30px !important;margin-top: -15px !important;background-size: 30px 30px !important;}
+	.swiper-button-next{right:8vw !important;}
+	.swiper-button-prev{left:8vw !important;}
+	.swiper-container2 {width: 100%;height: 120vw;}
+	.swiper-button-next2, .swiper-button-prev2{width: 20px !important;height: 30px !important;margin-top: -15px !important;background-size: 30px 30px !important;}
+	.swiper-button-next2{right:8vw !important;}
+	.swiper-button-prev2{left:8vw !important;}
+	.service .con h5{width:90%;margin:5vw;height:90vw;line-height:2.4;}
+	.project{margin-top:20px;}
+	.project .con .item{flex-direction: column;justify-content: center;background: rgba(196, 196, 196, 0.2) !important;width:90vw;height:120vw;box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);margin:5vw;}
+	.project .con .item img{height:10vw;margin-bottom:20px;}
+	.project .con .item h5{font-size:13px;line-height:2;}
+}
+@media screen and (min-width: 800px) and (max-width: 1200px){
+	.header{display: block;}
+	.headerMobile{display: none;}
+	h5{letter-spacing:-1px;font-size: 16px;}
+	.aboutBG{top:800px;}
+	.aboutBGZZ{top:800px;}
+	.content{width:800px;}
+	.title{align-items: flex-end;}
+	.title i{font-size: 50px;margin:0 30px;}
+	.title hr{height:7px;}
+	.about .con{text-align: left;width:400px;margin:auto;padding:60px 0;}
+	.about .title hr:nth-child(1){display: none;}
+	.banner{height:700px;background-position:center right;background-size: 500px;}
+	.project .con .item .img{width:240px;flex-shrink: 0;display: flex;align-items: center;justify-content: center;}
+	.banner img{width:700px;}
+	.banner div{margin-top:-50px;}
+	.banner div h5{margin-top: 20px;}
+	.service .con{padding-top:30px;}
+	.service .con h5{height:300px;}
+	.project{margin-top:80px;}
+	.project .title hr:nth-child(3){display: none;}
+	.project .con .item:nth-child(1) h5{text-align: left;}
+	.project .con .item:nth-child(2) h5{text-align: right;}
+	.project .con{height:600px;padding:30px 0;}
+	.contact .con{height:70px;}
+	.contact .con h5{line-height: 1.2;}
+	.mobile{display: none !important;}
+	.column{flex-direction: column;align-items: center;}
+	.column p{color:#EDEDED;}
+	.column hr{width:700px;}
+}
+@media(min-width: 1200px){
+	.project .con .item .img{width:400px;flex-shrink: 0;display: flex;align-items: center;justify-content: center;}
+	.headerMobile{display: none;}
+	.header{display: block;}
+	h5{letter-spacing:-1px;}
+	.aboutBG{top:600px;}
+	.aboutBGZZ{top:600px;}
+	.content{width:1200px;}
+	.title{align-items: flex-end;}
+	.title i{font-size: 60px;margin:0 40px;}
+	.title hr{height:8px;}
+	.about .con{text-align: left;width:400px;margin:auto;padding:60px 0;}
+	.about .title hr:nth-child(1){display: none;}
+	.banner{height:800px;background-position:center right;background-size:700px;}
+	.banner img{width:800px;}
+	.banner div{margin-top:-60px;}
+	.banner div h5{margin-top: 20px;}
+	.service .con{padding-top:30px;}
+	.service .con h5{height:360px;line-height: 2.4;}
+	.project{margin-top:100px;}
+	.project .con{height:700px;padding:20px 0;}
+	.project .title hr:nth-child(3){display: none;}
+	.project .con .item:nth-child(1) h5{text-align: left;}
+	.project .con .item:nth-child(2) h5{text-align: right;}
+	.contact{margin-top:60px;}
+	.contact .con{height:100px;}
+	.contact .con h5{line-height: 1.2;}
+	.mobile{display: none !important;}
+	.column{flex-direction: column;align-items: center;}
+	.column p{color:#EDEDED;}
+	.column hr{width:700px;}
+}
